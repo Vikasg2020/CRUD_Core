@@ -1,0 +1,5 @@
+Scaffold-DbContext "Server=CHETUIWK625\SQLEXPRESS ; Database= Template; Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -o Db_Context
+
+<updata database>
+
+Scaffold-DbContext "Server=Server Name ; Database= Database Name; Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -f

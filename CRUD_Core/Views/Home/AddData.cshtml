@@ -1,0 +1,51 @@
+﻿ 
+
+@model CRUD_Core.Models.DataModel
+
+
+<form asp-controller="Home"  asp-action="AddData" method="post">
+    <input type="hidden" asp-for="Id"/>
+    <div class="form-group col-md-8">
+
+        <label>Name</label>
+
+        <input placeholder="Name" type="text" class="form-control" asp-for="Name" />
+
+
+
+    </div>
+
+
+    <div class="form-group col-md-8">
+
+        <label>Moblie</label>
+
+        <input placeholder="Mobile" type="text" class="form-control" asp-for="Moblie" />
+
+
+
+    </div>
+    <div class="form-group col-md-8">
+
+        <label>Department</label>
+
+        <input placeholder="Department" type="text" class="form-control" asp-for="Depart" />
+
+
+
+    </div>
+
+    <div class="form-group col-md-8">
+
+        <label>Email</label>
+
+        <input placeholder="Email" type="text" class="form-control" asp-for="Email" />
+
+
+
+    </div>
+
+    <button class="btn btn-primary" value="button">Submit</button>
+
+</form>
+

@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<CRUD_Core.Models.DataModel>
+
+
+<table class="table table-striped">
+
+    <tr>
+        
+        <th>Name</th>
+        <th>mobile</th>
+        <th>Department</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </tr>
+
+    @foreach(var item in Model)
+    {
+
+
+<tr>
+    
+    <td>@item.Name</td>
+    <td>@item.Moblie</td>
+    <td>@item.Depart</td>
+    <td>@item.Email</td>
+
+    <td><a class="btn btn-primary" asp-controller="Home" asp-action="EditData" asp-route-id="@item.Id">Edit</a></td>
+    <td><a class="btn btn-danger" asp-controller="Home" asp-action="delete" asp-route-id="@item.Id">delete</a></td>
+
+</tr>
+
+
+
+
+    }
+
+   
+
+</table>
